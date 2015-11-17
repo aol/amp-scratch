@@ -10,6 +10,8 @@ var buffer = require('vinyl-buffer');
 var gutil = require('gulp-util');
 var sourcemaps = require('gulp-sourcemaps');
 var assign = require('lodash.assign');
+var autoprefixer = require('gulp-autoprefixer');
+var minifyCss = require('gulp-minify-css');
 
 // Compile SCSS files using node-sass
 gulp.task('styles', function () {
@@ -19,15 +21,15 @@ gulp.task('styles', function () {
 		.pipe(sourcemaps.init())
 
 		// Process and minify SCSS
-		.pipe(sass({
-			outputStyle: 'compressed'
-		})
+		.pipe(sass()
 			.on('error', function (err) {
 				// You can inspect / emit the entire error if you need to for debugging
 				// purposes. It's a little verbose to keep in the normal flow.
 				gutil.log(gutil.colors.red('Sass error: ') + err.message);
 			})
 		)
+		.pipe(minifyCss())
+		.pipe(autoprefixer({ map: true }))
 
 		// Write the sourcemap information to an external file
 		.pipe(sourcemaps.write('./maps'))
