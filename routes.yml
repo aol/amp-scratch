@@ -1,0 +1,4 @@
+# Homepage
+home:
+  path: /
+  view: @blocks/views/homepage.twig
