@@ -10,7 +10,7 @@ You can get way fancier than this setup when you're ready: the goal here is to p
 Getting Started
 ---------------
 
-The only global requirements are NodeJS (install via [Homebrew](http://brew.sh/)) if you're on a Mac) and [gulp](http://gulpjs.com/).
+The only global requirements are NodeJS (install via [Homebrew](http://brew.sh/) if you're on a Mac) and [gulp](http://gulpjs.com/).
 
 If you've never used gulp before, you'll need to install it globally, first. You won't have to do this for future gulp projects on this machine.
 
