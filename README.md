@@ -1,7 +1,7 @@
 AMP Scratch
 ===========
 
-Sample [AMP sites](http://www.aolpublishers.com/support/documentation/sites/filebased.md). For reference!
+Sample [AMP site](http://www.aolpublishers.com/support/documentation/sites/filebased.md) boilerplates. For reference!
 
 This repo provides boilerplate front-end build processes for AMP sites using the [AMP Cli](http://www.aolpublishers.com/support/documentation/sites/filebased/dev/cli.md).
 
