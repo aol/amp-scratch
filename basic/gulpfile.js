@@ -3,6 +3,7 @@ var clean = require('gulp-clean');
 var sass = require('gulp-sass');
 var watchify = require('watchify');
 var browserify = require('browserify');
+var uglify = require('gulp-uglify');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var gutil = require('gulp-util');
@@ -64,6 +65,7 @@ var browserifyThis = function (watch) {
 			// optional, remove if you dont want sourcemaps
 			.pipe(sourcemaps.init({ loadMaps: true })) // loads map from browserify file
 			// Add transformation tasks to the pipeline here.
+			.pipe(uglify()) // minify
 			.pipe(sourcemaps.write('./')) // writes .map file
 			.pipe(gulp.dest('./assets/js'));
 	};
