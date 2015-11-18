@@ -1,12 +1,13 @@
 AMP Scratch
 ===========
 
-A sample [AMP site](http://www.aolpublishers.com/support/documentation/sites/filebased.md). For reference!
+Sample [AMP sites](http://www.aolpublishers.com/support/documentation/sites/filebased.md). For reference!
 
-This is a simple demo to show you how to use gulp to manage a front-end build process for an AMP site using the [AMP Cli](http://www.aolpublishers.com/support/documentation/sites/filebased/dev/cli.md).
+This repo provides boilerplate front-end build processes for AMP sites using the [AMP Cli](http://www.aolpublishers.com/support/documentation/sites/filebased/dev/cli.md).
 
-You can get way fancier than this setup when you're ready: the goal here is to provide simple enough building blocks for you to get an idea what's going on.
+* Basic: gulp build using Sass for stylesheets and Browserify for scripts.
 
+If you have a custom build that solves a particular need, please submit a pull request. We also accept useful modifications to existing boilerplates. Help make this repo useful for everybody!
 Getting Started
 ---------------
 
@@ -18,7 +19,7 @@ If you've never used gulp before, you'll need to install it globally, first. You
 $ npm install -g gulp
 ```
 
-Install the dependencies for the project that are listed in `package.json` with:
+Cd to the boilerplate you want to use. Install the dependencies for the project that are listed in `package.json` with:
 
 ```
 $ npm install
@@ -40,3 +41,8 @@ The other thing you'll want to do a lot of the time is run the watch, which will
 ```
 $ gulp watch
 ```
+
+Contributions Guide
+===================
+
+Until we get more formal specifications written, just try to follow the `basic` example as closely as possible. Please amply comment your code. Tabs, not spaces!
