@@ -1,0 +1,9 @@
+body {
+	color: hsl(0, 0%, 20%);
+	font: {
+		family: sans-serif;
+	}
+}
+
+@import 'modules/message';
+@import 'modules/upholstery';
