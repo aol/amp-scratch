@@ -17,6 +17,10 @@ module.exports = {
 	scripts: {
 		src: src + '/js/app.js',
 		dest: dest + '/js'
+	},
+
+	notifier: {
+		icon: './gulp/lib/amp.png'
 	}
 
 };

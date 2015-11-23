@@ -1,11 +1,14 @@
+var gulp = require('gulp');
 var browserify = require('browserify');
 var watchify = require('watchify');
 var uglify = require('gulp-uglify');
+var sourcemaps = require('gulp-sourcemaps');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var gutil = require('gulp-util');
 var assign = require('lodash.assign');
 var config = require('../config').scripts;
+var path = require('path');
 
 var browserifyThis = function (watch) {
 	// Add custom browserify options here
