@@ -6,6 +6,7 @@ Sample [AMP site](http://www.aolpublishers.com/support/documentation/sites/fileb
 This repo provides boilerplate front-end build processes for AMP sites using the [AMP Cli](http://www.aolpublishers.com/support/documentation/sites/filebased/dev/cli.md).
 
 * Basic: gulp build using Sass for stylesheets and Browserify for scripts.
+* Advanced: gulp build with tasks and utilitity functions separated into different files.
 
 If you have a custom build that solves a particular need, please submit a pull request. We also accept useful modifications to existing boilerplates. Help make this repo useful for everybody!
 Getting Started
